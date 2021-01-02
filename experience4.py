@@ -32,18 +32,37 @@ for i in lis1:
 lis3 = sorted(lis3,reverse=True)
 print(lis3[0])
 '''
+
 '''
 a,b = map(int,input().split( ))
 def find_divisor(a,b):
-    if a<b:
-        a,b=b,a
-    if a%b==0:
+    if a%b == 0:
         return b
-    else:
+    else :
         return find_divisor(b,a%b)
-print(find_divisor(6,8))
+print(find_divisor(a,b))
 '''
 
+
+
+
+# 3
+
+
+# n= int(input())
+# sn = 3*(2**(n-1) -1)+1
+# print(sn)
+
+'''
+n=int(input())
+def f(n):
+    if n==1:
+        return 1
+    else:
+        return (f(n-1)+1)*2
+print(f(n))
+
+'''
 
 # 4  a * (1 + b)**c - a
 
@@ -58,6 +77,8 @@ print(doubleProfit(a,b,c))
 '''
 
 # # 5
+
+'''
 n = float(input())
 def getResult(n):
     if n == 0:
@@ -66,3 +87,7 @@ def getResult(n):
         return ((-1)**(n-1))*1/((n+1)*n) + getResult(n-1)
 
 print(getResult(n))
+'''
+
+
+
